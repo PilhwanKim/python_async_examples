@@ -8,7 +8,7 @@ def push_hello_world(observer):
     observer.on_completed()
 
 
-class PrintOberver(Observer):
+class PrintObserver(Observer):
 
     def on_next(self, value):
         print("Received {0}".format(value))
@@ -20,7 +20,7 @@ class PrintOberver(Observer):
         print("Error Occurred: {0}".format(error))
 
 
-class ListOberver(Observer):
+class ListObserver(Observer):
 
     def __init__(self):
         self.my_list = []
@@ -38,5 +38,5 @@ class ListOberver(Observer):
 
 if __name__ == '__main__':
     source = Observable.create(push_hello_world)
-    source.subscribe(PrintOberver())
-    source.subscribe(ListOberver())
+    source.subscribe(PrintObserver())
+    source.subscribe(ListObserver())

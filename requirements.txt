@@ -1,5 +1,2 @@
-asyncio (3.4.3)
-pip (9.0.1)
-Rx (1.6.0)
-setuptools (28.8.0)
-tornado (4.5.3)
+asyncio==3.4.3
+Rx==1.6.0
